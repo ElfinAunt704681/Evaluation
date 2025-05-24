@@ -26,7 +26,7 @@ function toggle_automatic_setting() {
 }
 
 document.getElementsByClassName("auto_water_checkbox")[0].onchange = ()=>{
-    console.log("change")
+    // console.log("change")
     // Send Request Etc to server
     button_state_handler()
 } 
@@ -50,12 +50,12 @@ function button_state_handler() {
     }
 
     if (checkButton.checked) {
-        console.log("dropdown menu disabled");
+        // console.log("dropdown menu disabled");
         intervalSelector.disabled = true;
         intervalSelector.style.opacity = "0.6";
     }
     else{
-        console.log("dropdown menu enabled");
+        // console.log("dropdown menu enabled");
         intervalSelector.disabled = false;
         intervalSelector.style.opacity = "";
     }
