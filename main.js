@@ -3,6 +3,7 @@ window.onresize = responsive;
 window.onload = responsive;
 
 function responsive() {
+    console.log("Changed");
     let width = screen.width;
     let height = screen.height;
     if (width < 480) {
